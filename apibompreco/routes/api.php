@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 // rotas para visualizar os registros
 Route::get('/',function(){return response()->json(['Sucesso'=>true]);});
-Route::get('/produtos',[ProdutoController::class,'index']);
-Route::get('/produtos/{codigo}',[ProdutosController::class, 'show']);
+Route::get('/produtos',[ProdutosController::class,'index']);
+Route::get('/produtos/{codigo}',[ProdutosController::class,'show']);
 
 // rota para inserir os regiatros
 Route::post('/produtos',[ProdutosController::class, 'store']);
