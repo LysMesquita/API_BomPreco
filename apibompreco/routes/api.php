@@ -10,7 +10,7 @@ Route::get('/produtos',[ProdutosController::class,'index']);
 Route::get('/produtos/{codigo}',[ProdutosController::class,'show']);
 
 // rota para inserir os regiatros
-Route::post('/produtos',[ProdutosController::class, 'store']);
+Route::post('/produtos',[ProdutosController::class,'store']);
 
 // rota para alternar os registros
 Route::put('/produtos/{codigo}',[ProdutosController::class,'update']);
